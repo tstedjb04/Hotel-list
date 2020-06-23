@@ -9,7 +9,7 @@ import initialState from '../store/initialState';
 
 const theme = {
   colors: {
-    black: 'rgba(0, 0, 0, 0.85)',
+    black: '#002240',
     white: '#FFFFFF',
     primary: '#ED2024',
   },
@@ -56,6 +56,28 @@ export default class MyApp extends App {
           }
           body {
             position: relative;
+          }
+          html,
+          body,
+          #__next {
+            margin: 0;
+          }
+          * {
+            font-family: 'Roboto', 'NotoSansThaiUI';
+          }
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6,
+          p {
+            margin: 0;
+          }
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
           }
           input {
             -webkit-user-select: text;
