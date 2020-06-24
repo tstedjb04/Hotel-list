@@ -24,7 +24,7 @@ export default class MyApp extends App {
     return (
       <ThemeProvider theme={theme}>
         <Head>
-          <title>Hotel list</title>
+          <title>Condominium list</title>
           <meta charset="utf-8" />
           <meta
             name="viewport"
@@ -63,7 +63,7 @@ export default class MyApp extends App {
             margin: 0;
           }
           * {
-            font-family: 'Roboto', 'NotoSansThaiUI';
+            font-family: 'Roboto', sans-serif;
           }
           h1,
           h2,
