@@ -267,32 +267,37 @@ const Home = () => {
   return (
     <Layout>
       <Container>
-        <ListHeader>
-          <div className="number">38</div>
-          <div className="layout">
-            <p>listings successfully and Ready to published</p>
-            <div className="action">
-              <div style={{ marginRight: '80px', color: '#0089FF' }}>
-                <img src="/static/update.png" style={{ marginRight: '12px' }} />
-                Update data
-              </div>
-              <div>
-                <img
-                  src="/static/published.png"
-                  style={{ marginRight: '12px' }}
-                />
-                Published
-              </div>
-            </div>
-          </div>
-        </ListHeader>
         {data.length > 0 ? (
-          <CustomTable
-            columns={columns}
-            dataSource={data}
-            scroll={{ x: '100vw' }}
-            pagination={false}
-          />
+          <>
+            <ListHeader>
+              <div className="number">38</div>
+              <div className="layout">
+                <p>listings successfully and Ready to published</p>
+                <div className="action">
+                  <div style={{ marginRight: '80px', color: '#0089FF' }}>
+                    <img
+                      src="/static/update.png"
+                      style={{ marginRight: '12px' }}
+                    />
+                    Update data
+                  </div>
+                  <div>
+                    <img
+                      src="/static/published.png"
+                      style={{ marginRight: '12px' }}
+                    />
+                    Published
+                  </div>
+                </div>
+              </div>
+            </ListHeader>
+            <CustomTable
+              columns={columns}
+              dataSource={data}
+              scroll={{ x: '100vw' }}
+              pagination={false}
+            />
+          </>
         ) : (
           <UploadCard>
             <div className="heading">
